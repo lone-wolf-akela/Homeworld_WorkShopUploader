@@ -1,0 +1,18 @@
+﻿<Window x:Class="WorkShopUploader.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorkShopUploader"
+        mc:Ignorable="d"
+        Title="Homeworld Workshop Uploader" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid Margin="0">
+        <Label x:Name="lbl_filename" Content="Label" HorizontalAlignment="Left" Height="73" Margin="51,40,0,0" VerticalAlignment="Top" Width="669"/>
+        <TextBox x:Name="txt_path" HorizontalAlignment="Left" Height="27" Margin="50,258,0,0" TextWrapping="Wrap" Text="path" VerticalAlignment="Top" Width="618"/>
+        <Label Content="Please drag &amp; drop the file here, or select its path." HorizontalAlignment="Left" Margin="51,118,0,0" VerticalAlignment="Top" Width="538"/>
+        <Button x:Name="btn_browse" Content="Browse" HorizontalAlignment="Left" Margin="693,253,0,0" VerticalAlignment="Top" Width="75" Height="32" Click="btn_browse_Click"/>
+        <Button x:Name="btn_upload" Content="Upload" HorizontalAlignment="Left" Margin="647,353,0,0" VerticalAlignment="Top" Width="121" Height="40" Click="btn_upload_Click"/>
+        <Rectangle Fill="#FF00FF4C" HorizontalAlignment="Left" Height="86" Margin="50,149,0,0" Stroke="Black" VerticalAlignment="Top" Width="113" Drop="Rectangle_Drop" AllowDrop="True"/>
+
+    </Grid>
+</Window>
